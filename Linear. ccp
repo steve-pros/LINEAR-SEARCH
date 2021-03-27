@@ -1,0 +1,74 @@
+// C++ code to linearly search x in arr[]. If x
+// is present then return its location, otherwise
+// return -1
+ 
+#include<iostream>
+#include <windows.h>
+ 
+using namespace std;
+
+void fordelay(int j)
+{   int i,k;
+    for(i=0;i<j;i++)
+         k=i;
+}
+
+int main()
+{
+	int n,i,flag=0;
+	string a[20],x;
+	cout<<endl<<endl<<endl<<"\t\t\t ========LINEAR SEARCH ==========="<<endl<<endl;
+	cout<<endl<<"How many elements?"<<endl;
+	cin>>n;
+	system("cls");
+//	system("color 9");
+	cout<<endl<<endl<<endl<<"\t\t\t ========LINEAR SEARCH ==========="<<endl<<endl;
+	cout<<"\nEnter elements of the array"<<endl;
+	
+	for(i=0;i<n;++i)
+		cin>>a[i];
+	system("cls");
+	//system("color 2");
+	char temp[100], choose='Y';
+	do
+	{
+	cout<<endl<<endl<<endl<<"\t\t\t ========LINEAR SEARCH ==========="<<endl<<endl;
+	cout<<"\nEnter element to search:"<<endl;
+	cin>>x;
+	
+	
+	cout<<endl
+	<<"SEACHING... ";
+	  	    for(i=0;i<=4;i++)
+               {
+			   fordelay(100000000);
+			 
+			   cout<<".";
+			   }
+			   
+	cout<<endl<<endl<<endl;
+	for(i=0;i<n;++i)
+	{
+		if(a[i]==x)
+		{
+			flag=1;
+			break;
+		}
+	}
+	{
+	if(flag)
+		cout<<"'"<<x<<"'"<<"   "<<"is found at position   "<<i+1<<endl<<endl<<endl;
+	else
+  	{
+	cout<<"'"<<x<<"'"<<" "<<" is not found"<<endl<<endl<<endl;
+    }
+    } 
+ cout<<"\nDo You Want To Choose another number ? (y/n)";
+	          cin>>choose;
+	      }
+	          	     while(choose=='y' ||choose=='Y');
+	          	     cout<<endl<<endl<<endl;
+	          	     cout<< "\t\t\t### Thank You ###\t\t\t";
+         getchar();
+
+}
